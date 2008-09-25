@@ -1,0 +1,636 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:swfobject/locallang_tca.xml:tt_content.pi_flexform.sheet_general</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<swf>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:swfobject/locallang_tca.xml:tt_content.pi_flexform.swf</label>
+							<config>
+								<type>group</type>
+								<internal_type>file</internal_type>
+								<allowed>swf</allowed>
+								<max_size>100000</max_size>
+								<uploadfolder>uploads/tx_swfobject</uploadfolder>
+								<maxitems>1</maxitems>
+								<size>1</size>
+								<maxitems>1</maxitems>
+								<eval>num,required</eval>
+								<selectedListStyle>Width:180px</selectedListStyle>
+							</config>
+						</TCEforms>
+					</swf>
+					<width>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:swfobject/locallang_tca.xml:tt_content.pi_flexform.width</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<checkbox></checkbox>
+								<size>5</size>
+							</config>
+						</TCEforms>
+					</width>
+					<height>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:swfobject/locallang_tca.xml:tt_content.pi_flexform.height</label>
+							<config>
+								<type>input</type>
+								<eval>num</eval>
+								<checkbox></checkbox>
+								<size>5</size>
+							</config>
+						</TCEforms>
+					</height>
+					<unit>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:swfobject/locallang_tca.xml:tt_content.pi_flexform.unit</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">pixels</numIndex>
+										<numIndex index="1">pixels</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">percentage</numIndex>
+										<numIndex index="1">percentage</numIndex>
+									</numIndex>
+								</items>
+								<maxitems>1</maxitems>
+								<size>1</size>
+							</config>
+						</TCEforms>
+					</unit>
+					<requiredVersion>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:swfobject/locallang_tca.xml:tt_content.pi_flexform.requiredVersion</label>
+							<config>
+								<type>input</type>
+								<eval>required</eval>
+								<size>5</size>
+							</config>
+						</TCEforms>
+					</requiredVersion>
+					<expressInstall>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:swfobject/locallang_tca.xml:tt_content.pi_flexform.expressInstall</label>
+							<config>
+	                            <type>check</type>
+	                        </config>
+						</TCEforms>
+					</expressInstall>
+				</el>
+			</ROOT>
+		</sDEF>
+		<sAlternativeContent>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:swfobject/locallang_tca.xml:tt_content.pi_flexform.sheet_alternativeContent</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<alternativeContentReference>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:swfobject/locallang_tca.xml:tt_content.pi_flexform.alternativeContentReference</label>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>tt_content</allowed>
+								<size>1</size>
+								<minitems>0</minitems>
+								<maxitems>1</maxitems>
+							</config>
+						</TCEforms>
+					</alternativeContentReference>
+					<alternativeContent>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:swfobject/locallang_tca.xml:tt_content.pi_flexform.alternativeContent</label>
+							<config>
+								<type>text</type>
+								<cols>30</cols>
+								<rows>7</rows>
+							</config>
+							<defaultExtras>richtext[paste|bold|italic|underline]:rte_transform[mode=ts_css]</defaultExtras>
+						</TCEforms>
+					</alternativeContent>
+				</el>
+			</ROOT>
+		</sAlternativeContent>
+		<sAdvancedOptions>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:swfobject/locallang_tca.xml:tt_content.pi_flexform.sheet_advancedOptions</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<attribute_name>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:swfobject/locallang_tca.xml:tt_content.pi_flexform.attribute_name</label>
+							<config>
+								<type>input</type>
+								<size>10</size>
+							</config>
+						</TCEforms>
+					</attribute_name>
+					<attribute_class>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:swfobject/locallang_tca.xml:tt_content.pi_flexform.attribute_class</label>
+							<config>
+								<type>input</type>
+								<size>10</size>
+							</config>
+						</TCEforms>
+					</attribute_class>
+					<attribute_align>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:swfobject/locallang_tca.xml:tt_content.pi_flexform.attribute_align</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">Choose...</numIndex>
+										<numIndex index="1"></numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">middle</numIndex>
+										<numIndex index="1">middle</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">left</numIndex>
+										<numIndex index="1">left</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">right</numIndex>
+										<numIndex index="1">right</numIndex>
+									</numIndex>
+									<numIndex index="4" type="array">
+										<numIndex index="0">top</numIndex>
+										<numIndex index="1">top</numIndex>
+									</numIndex>
+									<numIndex index="5" type="array">
+										<numIndex index="0">bottom</numIndex>
+										<numIndex index="1">bottom</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+				    </attribute_align>
+					<parameter_play>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:swfobject/locallang_tca.xml:tt_content.pi_flexform.parameter_play</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">Choose...</numIndex>
+										<numIndex index="1"></numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">true</numIndex>
+										<numIndex index="1">true</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">false</numIndex>
+										<numIndex index="1">false</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+				    </parameter_play>
+					<parameter_loop>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:swfobject/locallang_tca.xml:tt_content.pi_flexform.parameter_loop</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">Choose...</numIndex>
+										<numIndex index="1"></numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">true</numIndex>
+										<numIndex index="1">true</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">false</numIndex>
+										<numIndex index="1">false</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+				    </parameter_loop>
+					<parameter_menu>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:swfobject/locallang_tca.xml:tt_content.pi_flexform.parameter_menu</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">Choose...</numIndex>
+										<numIndex index="1"></numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">true</numIndex>
+										<numIndex index="1">true</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">false</numIndex>
+										<numIndex index="1">false</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+				    </parameter_menu>
+					<parameter_quality>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:swfobject/locallang_tca.xml:tt_content.pi_flexform.parameter_quality</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">Choose...</numIndex>
+										<numIndex index="1"></numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">best</numIndex>
+										<numIndex index="1">best</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">high</numIndex>
+										<numIndex index="1">high</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">medium</numIndex>
+										<numIndex index="1">medium</numIndex>
+									</numIndex>
+									<numIndex index="4" type="array">
+										<numIndex index="0">autohigh</numIndex>
+										<numIndex index="1">autohigh</numIndex>
+									</numIndex>
+									<numIndex index="5" type="array">
+										<numIndex index="0">autolow</numIndex>
+										<numIndex index="1">autolow</numIndex>
+									</numIndex>
+									<numIndex index="6" type="array">
+										<numIndex index="0">low</numIndex>
+										<numIndex index="1">low</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+				    </parameter_quality>
+					<parameter_scale>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:swfobject/locallang_tca.xml:tt_content.pi_flexform.parameter_scale</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">Choose...</numIndex>
+										<numIndex index="1"></numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">showall</numIndex>
+										<numIndex index="1">showall</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">noborder</numIndex>
+										<numIndex index="1">noborder</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">exactfit</numIndex>
+										<numIndex index="1">exactfit</numIndex>
+									</numIndex>
+									<numIndex index="4" type="array">
+										<numIndex index="0">noscale</numIndex>
+										<numIndex index="1">noscale</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+				    </parameter_scale>
+					<parameter_salign>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:swfobject/locallang_tca.xml:tt_content.pi_flexform.parameter_salign</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">Choose...</numIndex>
+										<numIndex index="1"></numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">tl</numIndex>
+										<numIndex index="1">tl</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">tr</numIndex>
+										<numIndex index="1">tr</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">bl</numIndex>
+										<numIndex index="1">bl</numIndex>
+									</numIndex>
+									<numIndex index="4" type="array">
+										<numIndex index="0">br</numIndex>
+										<numIndex index="1">br</numIndex>
+									</numIndex>
+									<numIndex index="5" type="array">
+										<numIndex index="0">l</numIndex>
+										<numIndex index="1">l</numIndex>
+									</numIndex>
+									<numIndex index="6" type="array">
+										<numIndex index="0">t</numIndex>
+										<numIndex index="1">t</numIndex>
+									</numIndex>
+									<numIndex index="7" type="array">
+										<numIndex index="0">r</numIndex>
+										<numIndex index="1">r</numIndex>
+									</numIndex>
+									<numIndex index="8" type="array">
+										<numIndex index="0">b</numIndex>
+										<numIndex index="1">b</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+				    </parameter_salign>
+					<parameter_wmode>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:swfobject/locallang_tca.xml:tt_content.pi_flexform.parameter_wmode</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">Choose...</numIndex>
+										<numIndex index="1"></numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">window</numIndex>
+										<numIndex index="1">window</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">opaque</numIndex>
+										<numIndex index="1">opaque</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">transparent</numIndex>
+										<numIndex index="1">transparent</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+				    </parameter_wmode>
+					<parameter_bgcolor>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:swfobject/locallang_tca.xml:tt_content.pi_flexform.parameter_bgcolor</label>
+							<config>
+								<type>input</type>
+								<size>5</size>
+								<wizards>
+									<_PADDING>2</_PADDING>
+									<color>
+										<title>Color:</title>
+										<type>colorbox</type>
+										<dim>15x10</dim>
+										<tableStyle>border: solid 1px black;</tableStyle>
+										<script>wizard_colorpicker.php</script>
+										<JSopenParams>height=550,width=365,status=0,menubar=0,scrollbars=1</JSopenParams>
+										<exampleImg>gfx/wizard_colorpickerex.jpg</exampleImg>
+									</color>
+								</wizards>
+							</config>
+						</TCEforms>
+				    </parameter_bgcolor>
+					<parameter_devicefont>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:swfobject/locallang_tca.xml:tt_content.pi_flexform.parameter_devicefont</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">Choose...</numIndex>
+										<numIndex index="1"></numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">true</numIndex>
+										<numIndex index="1">true</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">false</numIndex>
+										<numIndex index="1">false</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+				    </parameter_devicefont>
+					<parameter_seamlesstabbing>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:swfobject/locallang_tca.xml:tt_content.pi_flexform.parameter_seamlesstabbing</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">Choose...</numIndex>
+										<numIndex index="1"></numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">true</numIndex>
+										<numIndex index="1">true</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">false</numIndex>
+										<numIndex index="1">false</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+				    </parameter_seamlesstabbing>
+					<parameter_swliveconnect>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:swfobject/locallang_tca.xml:tt_content.pi_flexform.parameter_swliveconnect</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">Choose...</numIndex>
+										<numIndex index="1"></numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">true</numIndex>
+										<numIndex index="1">true</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">false</numIndex>
+										<numIndex index="1">false</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+				    </parameter_swliveconnect>
+					<parameter_allowfullscreen>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:swfobject/locallang_tca.xml:tt_content.pi_flexform.parameter_allowfullscreen</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">Choose...</numIndex>
+										<numIndex index="1"></numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">true</numIndex>
+										<numIndex index="1">true</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">false</numIndex>
+										<numIndex index="1">false</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+				    </parameter_allowfullscreen>
+					<parameter_allowfullscreen>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:swfobject/locallang_tca.xml:tt_content.pi_flexform.parameter_allowfullscreen</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">Choose...</numIndex>
+										<numIndex index="1"></numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">true</numIndex>
+										<numIndex index="1">true</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">false</numIndex>
+										<numIndex index="1">false</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+				    </parameter_allowfullscreen>
+				    <parameter_allowscriptaccess>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:swfobject/locallang_tca.xml:tt_content.pi_flexform.parameter_allowscriptaccess</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">Choose...</numIndex>
+										<numIndex index="1"></numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">always</numIndex>
+										<numIndex index="1">always</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">sameDomain</numIndex>
+										<numIndex index="1">sameDomain</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">never</numIndex>
+										<numIndex index="1">never</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+				    </parameter_allowscriptaccess>
+					<parameter_allownetworking>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:swfobject/locallang_tca.xml:tt_content.pi_flexform.parameter_allownetworking</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">Choose...</numIndex>
+										<numIndex index="1"></numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">all</numIndex>
+										<numIndex index="1">all</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">internal</numIndex>
+										<numIndex index="1">internal</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">none</numIndex>
+										<numIndex index="1">none</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+				    </parameter_allownetworking>
+					<parameter_base>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:swfobject/locallang_tca.xml:tt_content.pi_flexform.parameter_base</label>
+							<config>
+								<type>input</type>
+								<size>10</size>
+							</config>
+						</TCEforms>
+				    </parameter_base>
+				</el>
+			</ROOT>
+		</sAdvancedOptions>
+		<sFlashVars>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:swfobject/locallang_tca.xml:tt_content.pi_flexform.sheet_flashVars</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<flashVars>
+						<TCEforms>
+							<exclude>1</exclude>
+							<label>LLL:EXT:swfobject/locallang_tca.xml:tt_content.pi_flexform.flashVars</label>
+							<config>
+								<type>text</type>
+								<cols>30</cols>
+								<rows>8</rows>
+							</config>
+						</TCEforms>
+					</flashVars>
+				</el>
+			</ROOT>
+		</sFlashVars>
+	</sheets>
+</T3DataStructure>

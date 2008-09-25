@@ -1,0 +1,17 @@
+##
+## @package TYPO3
+## @subpackage swfobject
+## @version $Id: constants.txt 25 2008-08-07 09:49:17Z waidelich $
+##
+
+plugin.tx_swfobject_pi1 {
+
+	 # cat=plugin.tx_swfobject_pi1//a; type=text; label= expressInstall-SWF: Path to the Adobe Express Install script (see http://kb.adobe.com/selfservice/viewContent.do?externalId=6a253b75)
+	expressInstallSwf = EXT:swfobject/lib/swfobject/src/expressInstall.swf
+	
+	 # cat=plugin.tx_swfobject_pi1//b; type=boolean; label=Deferred Mode: Adds defer="defer" to the script-tag of the javascript code which indicates that the script is not going to generate any document content.
+	deferredMode = 1
+	
+	 # cat=plugin.tx_swfobject_pi1//c; type=boolean; label=Add Javascript to Body: Includes swfobject initalisation inside the html body, not inside the head like it's recommended to circumvent crash in IE6.
+	addScriptToBody = 1
+}

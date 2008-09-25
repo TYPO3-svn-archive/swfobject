@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'swfobject'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tt_content.pi_flexform.sheet_general">General</label>
+			<label index="tt_content.pi_flexform.sheet_alternativeContent">Alternative content</label>
+			<label index="tt_content.pi_flexform.sheet_advancedOptions">Advanced</label>
+			<label index="tt_content.pi_flexform.sheet_flashVars">FlashVars</label>
+			<label index="tt_content.pi_flexform.swf">Flash movie (swf)</label>
+			<label index="tt_content.pi_flexform.width">Movie width</label>
+			<label index="tt_content.pi_flexform.height">Movie height</label>
+			<label index="tt_content.pi_flexform.unit">Size unit</label>
+			<label index="tt_content.pi_flexform.requiredVersion">Required Flash version</label>
+			<label index="tt_content.pi_flexform.expressInstall">use Adobe Express Install</label>
+			<label index="tt_content.pi_flexform.alternativeContent">alternative content</label>
+			<label index="tt_content.pi_flexform.alternativeContentReference">alternative content by reference</label>
+			<label index="tt_content.pi_flexform.attribute_name">name</label>
+			<label index="tt_content.pi_flexform.attribute_class">class</label>
+			<label index="tt_content.pi_flexform.attribute_align">align</label>
+			<label index="tt_content.pi_flexform.parameter_play">play</label>
+			<label index="tt_content.pi_flexform.parameter_loop">loop</label>
+			<label index="tt_content.pi_flexform.parameter_menu">menu</label>
+			<label index="tt_content.pi_flexform.parameter_quality">quality</label>
+			<label index="tt_content.pi_flexform.parameter_scale">scale</label>
+			<label index="tt_content.pi_flexform.parameter_salign">salign</label>
+			<label index="tt_content.pi_flexform.parameter_wmode">wmode</label>
+			<label index="tt_content.pi_flexform.parameter_bgcolor">bgcolor</label>
+			<label index="tt_content.pi_flexform.parameter_devicefont">devicefont</label>
+			<label index="tt_content.pi_flexform.parameter_seamlesstabbing">seamlesstabbing</label>
+			<label index="tt_content.pi_flexform.parameter_swliveconnect">swliveconnect</label>
+			<label index="tt_content.pi_flexform.parameter_allowfullscreen">allowfullscreen</label>
+			<label index="tt_content.pi_flexform.parameter_allowscriptaccess">allowscriptaccess</label>
+			<label index="tt_content.pi_flexform.parameter_allownetworking">allownetworking</label>
+			<label index="tt_content.pi_flexform.parameter_base">base</label>
+			<label index="tt_content.pi_flexform.flashVars">FlashVars (one p. line, var=value)</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="tt_content.pi_flexform.sheet_general">Standard</label>
+			<label index="tt_content.pi_flexform.sheet_alternativeContent">Alternativer Inhalt</label>
+			<label index="tt_content.pi_flexform.sheet_advancedOptions">Erweitert</label>
+			<label index="tt_content.pi_flexform.sheet_flashVars">FlashVars</label>
+			<label index="tt_content.pi_flexform.swf">Flash Film (swf)</label>
+			<label index="tt_content.pi_flexform.width">Film Breite</label>
+			<label index="tt_content.pi_flexform.height">Film Höhe</label>
+			<label index="tt_content.pi_flexform.unit">Maßeinheit</label>
+			<label index="tt_content.pi_flexform.requiredVersion">Erforderliche Flash Version</label>
+			<label index="tt_content.pi_flexform.expressInstall">Adobe Express Install</label>
+			<label index="tt_content.pi_flexform.alternativeContent">Alternativer Inhalt</label>
+			<label index="tt_content.pi_flexform.alternativeContentReference">Alternativer Inhalt (Datensatz)</label>
+			<label index="tt_content.pi_flexform.flashVars">FlashVars (eine p. Zeile, Var=Wert)</label>
+		</languageKey>
+	</data>
+</T3locallang>
