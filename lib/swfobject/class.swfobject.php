@@ -374,19 +374,19 @@ class swfobject {
 			// flashvars
 		$content.= 'var flashvars = {};'.chr(10);
 		foreach($this->flashvars as $key => $value) {
-			$content.= 'flashvars.'.$key.' = "'.$value.'"'.chr(10);
+			$content.= 'flashvars.'.$key.' = "'.$value.'";'.chr(10);
 		}
 		
 			// params
 		$content.= 'var params = {};'.chr(10);
 		foreach($this->params as $key => $value) {
-			$content.= 'params.'.$key.' = "'.$value.'"'.chr(10);
+			$content.= 'params.'.$key.' = "'.$value.'";'.chr(10);
 		}
 		
 			// attributes
 		$content.= 'var attributes = {};'.chr(10);
 		foreach($this->attributes as $key => $value) {
-			$content.= 'attributes.'.$key.' = "'.$value.'"'.chr(10);
+			$content.= 'attributes.'.$key.' = "'.$value.'";'.chr(10);
 		}
 		
 		$width = $this->width;
@@ -467,8 +467,8 @@ class swfobject {
 
 }
 
-if (defined('TYPO3_MODE') && $GLOBALS['TYPO3_CONF_VARS'][TYPO3_MODE]['XCLASS']['ext/np_flashcharts/lib/swfobject/lib/swfobject/class.swfobject.php'])	{
-	include_once($GLOBALS['TYPO3_CONF_VARS'][TYPO3_MODE]['XCLASS']['ext/np_flashcharts/lib/swfobject/lib/swfobject/class.swfobject.php']);
+if (defined('TYPO3_MODE') && $GLOBALS['TYPO3_CONF_VARS'][TYPO3_MODE]['XCLASS']['ext/swfobject/lib/class.swfobject.php'])	{
+	include_once($GLOBALS['TYPO3_CONF_VARS'][TYPO3_MODE]['XCLASS']['ext/swfobject/lib/class.swfobject.php']);
 }
 
 ?>

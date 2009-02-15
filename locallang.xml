@@ -7,7 +7,7 @@
 	<data type="array">
 		<languageKey index="default" type="array">
 			<label index="pi1_title">Flash movie</label>
-			<label index="pi1_plus_wiz_description">displays SWF files</label>
+			<label index="pi1_plus_wiz_description">displays SWF files</label>	
 		</languageKey>
 		<languageKey index="de" type="array">
 			<label index="pi1_title">Flashfilm</label>

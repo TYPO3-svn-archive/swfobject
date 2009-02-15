@@ -5,18 +5,58 @@
 ##
 
 plugin.tx_swfobject_pi1 {
-
+    #publish method: dynamic or static
+	publishMethod = {$plugin.tx_swfobject_pi1.publishMethod}
+	
 	expressInstallSwf = {$plugin.tx_swfobject_pi1.expressInstallSwf}
 	
 	deferredMode = {$plugin.tx_swfobject_pi1.deferredMode}
-	
 	addScriptToBody = {$plugin.tx_swfobject_pi1.addScriptToBody}
 	
-	flashVarsSetup {
+	#default width and height, overriden by flexform, record, getID3 or TS
+	default {
+		width = 320
+		height = 240
+	}
+	
+	requiredVersion = {$plugin.tx_swfobject_pi1.requiredVersion}
+	
+	flashVars_stdWrap {
 		insertData = 1
 	}
 	
+	attributes {
+		name =
+		id = 
+		class =
+		align =		
+	}
+	
+	parameter {
+		play =
+		loop = 
+		menu =
+		quality =
+		scale =
+		salign = 
+		wmode =
+		bgcolor =
+		devicefont =
+		seamlesstabbing =
+		swlifeconnect = 
+		allowfullscreen =
+		allowscriptaccess =
+		allownetworking =
+		base =
+	}
+	
+	file =
+	width =
+	height =
+	
 	swfFolder = uploads/tx_swfobject/
+	
+	alternativeContentStdWrap.wrap = 
 
 	alternativeContentSetup = RECORDS
 	alternativeContentSetup {

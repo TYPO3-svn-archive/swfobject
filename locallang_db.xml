@@ -6,9 +6,11 @@
 	</meta>
 	<data type="array">
 		<languageKey index="default" type="array">
+			<label index="tx_swfobject_movie">Flash Movie Settings</label>
 			<label index="tt_content.list_type_pi1">Flash movie</label>
 		</languageKey>
 		<languageKey index="de" type="array">
+			<label index="tx_swfobject_movie">Flashfilm Einstellungen</label>
 			<label index="tt_content.list_type_pi1">Flashfilm</label>
 		</languageKey>
 	</data>
