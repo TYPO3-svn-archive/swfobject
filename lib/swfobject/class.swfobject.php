@@ -374,13 +374,13 @@ class swfobject {
 			// flashvars
 		$content.= 'var flashvars = {};'.chr(10);
 		foreach($this->flashvars as $key => $value) {
-			$content.= 'flashvars.'.$key.' = "'.$value.'";'.chr(10);
+			$content.= 'flashvars.'.$key.' = '.$value.';'.chr(10);
 		}
 		
 			// params
 		$content.= 'var params = {};'.chr(10);
 		foreach($this->params as $key => $value) {
-			$content.= 'params.'.$key.' = "'.$value.'";'.chr(10);
+			$content.= 'params.'.$key.' = '.$value.';'.chr(10);
 		}
 		
 			// attributes
@@ -439,9 +439,11 @@ class swfobject {
 	 * @param	string	FlashVar key
 	 * @param	string	FlashVar value
 	 * @param	bool	Flag if value should be run trough htmlspecialchars
+	 * @param	bool	Flag if value should be wrapped with double quotes 
 	 */
-	function addFlashvar($key, $value, $hsc = true) {
-		$this->flashvars[$key] = $hsc ? htmlspecialchars($value) : $value;
+	function addFlashvar($key, $value, $hsc = true, $addQuotes = true) {
+		$value = $hsc ? htmlspecialchars($value) : $value;
+		$this->flashvars[$key] = $addQuotes ? '"'.$value.'"' : $value;
 	}
 	
 	/**
