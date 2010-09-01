@@ -224,7 +224,7 @@ class tx_swfobject_pi1 extends tslib_pibase {
 			require_once(t3lib_extMgm::extPath('getid3').'classes/getid3.php');
 			$this->conf['getid3Version17'] = true;
 			$this->useGetid3 = true;
-		} else {
+		} elseif (isset($this->conf['getid3Path'])) {
 			require_once($this->conf['getid3Path'].'getid3.php');
 			$this->useGetid3 = true;
 		}
