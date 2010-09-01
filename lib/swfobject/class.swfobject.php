@@ -438,9 +438,10 @@ class swfobject {
 	 *
 	 * @param	string	FlashVar key
 	 * @param	string	FlashVar value
+	 * @param	bool	Flag if value should be run trough htmlspecialchars
 	 */
-	function addFlashvar($key, $value) {
-		$this->flashvars[$key] = htmlspecialchars($value);
+	function addFlashvar($key, $value, $hsc = true) {
+		$this->flashvars[$key] = $hsc ? htmlspecialchars($value) : $value;
 	}
 	
 	/**
