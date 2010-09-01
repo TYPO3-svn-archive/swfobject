@@ -38,7 +38,7 @@ t3lib_div::loadTCA('tt_content');
 $TCA['tt_content']['types']['list']['subtypes_addlist'][$GLOBALS['_EXTKEY'].'_pi1'] = 'pi_flexform';
 $TCA['tt_content']['types']['list']['subtypes_excludelist'][$GLOBALS['_EXTKEY'].'_pi1'] = 'layout,select_key,pages,recursive';
 
-t3lib_extMgm::addStaticFile($GLOBALS['_EXTKEY'],'pi1/static/','Flash movie (SWFObject 2.1)');
+t3lib_extMgm::addStaticFile($GLOBALS['_EXTKEY'],'pi1/static/','Flash movie (SWFObject 2.2)');
 
 t3lib_extMgm::addPlugin(array('LLL:EXT:swfobject/locallang_db.xml:tt_content.list_type_pi1', $GLOBALS['_EXTKEY'].'_pi1'), 'list_type');
 if (t3lib_extMgm::isLoaded('dam')) {
