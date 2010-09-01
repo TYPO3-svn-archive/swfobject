@@ -68,6 +68,13 @@ class tx_swfobject_pi1 extends tslib_pibase {
 	var $swfobject;
 	
 	/**
+	 * Flag if SWFObject library should be included in page header
+	 *
+	 * @var boolean includeSWFObjectJS
+	 */
+	var $includeSWFObjectJS;
+	
+	/**
 	 * The main method of the PlugIn
 	 *
 	 * @param	string		$content: The PlugIn content
@@ -76,6 +83,12 @@ class tx_swfobject_pi1 extends tslib_pibase {
 	 */
 	function main($content, $conf) {
 		$this->init($conf);
+		$content = $this->render();
+
+		return $content;
+	}
+	
+	function render() {
 		// set standard options (id, swf, size)
 		$replaceId = strlen($this->conf['attributes.']['id']) ? $this->conf['attributes.']['id'] : 'swf'.substr(md5(uniqid(rand(), TRUE)), 0, 8);
 		$this->swfobject->setReplaceId($replaceId);
@@ -130,19 +143,26 @@ class tx_swfobject_pi1 extends tslib_pibase {
 			$this->conf['alternativeContentSetup.']['source'] = intval($this->conf['alternativeContentReference']);
 			$alternativeContent = $this->cObj->cObjGetSingle($this->conf['alternativeContentSetup'],$this->conf['alternativeContentSetup.']);
 		}
-		
 		$this->swfobject->setAlternativeContent($alternativeContent);
+ 		
+		$this->includeSWFObjectJS = $this->conf['includeSWFObjectJS'] ? 1 : 0;
+        if ($this->includeSWFObjectJS) {
+			$GLOBALS['TSFE']->additionalHeaderData[$this->prefixId] = '<script type="text/javascript" src="'.t3lib_extMgm::siteRelPath('swfobject').'lib/swfobject/swfobject.js"></script>';
+			$content.= $this->swfobject->htmlCode().chr(10);
+        }
 
-		$GLOBALS['TSFE']->additionalHeaderData[$this->prefixId] = '<script type="text/javascript" src="'.t3lib_extMgm::siteRelPath('swfobject').'lib/swfobject/swfobject.js"></script>';
-		$content.= $this->swfobject->htmlCode().chr(10);
 		
 		if ($this->conf['addScriptToBody']) {
 			$content.= $this->swfobject->jsCode().chr(10);
 		} else {
 			$GLOBALS['TSFE']->additionalHeaderData[$this->prefixId.'_'.$replaceId] = $this->swfobject->jsCode();
 		}
-		
-		return $this->pi_wrapInBaseClass($this->cObj->stdWrap($content, $this->conf['alternativeContentStdWrap.']));
+		if($this->conf['wrapinBaseClass']) {
+			$content = $this->pi_wrapInBaseClass($this->cObj->stdWrap($content, $this->conf['alternativeContentStdWrap.']));
+		} else {
+			$content = $this->cObj->stdWrap($content, $this->conf['alternativeContentStdWrap.']);
+		}		
+		return $content;		
 	}
 
 	

@@ -5,6 +5,9 @@
 ##
 
 plugin.tx_swfobject_pi1 {
+	#should SWFObject library should be included
+	includeSWFObjectJS = 1
+
     #publish method: dynamic or static
 	publishMethod = {$plugin.tx_swfobject_pi1.publishMethod}
 	
