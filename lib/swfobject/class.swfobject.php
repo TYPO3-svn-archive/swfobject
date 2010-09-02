@@ -443,7 +443,7 @@ class swfobject {
 	 */
 	function addFlashvar($key, $value, $hsc = true, $addQuotes = true) {
 		$value = $hsc ? htmlspecialchars($value) : $value;
-		$this->flashvars[$key] = $addQuotes ? '"'.$value.'"' : $value;
+		$this->flashvars[$key] = $addQuotes ? "'".$value."'" : $value;
 	}
 	
 	/**
